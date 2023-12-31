@@ -1,0 +1,56 @@
+/* Updated styles for responsiveness, animation, and gradient */
+.category-card {
+    width: 100%; /* Full width on small screens */
+    max-width: 400px; /* Maximum width on larger screens */
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(to bottom, #FF5733, #FF8C00, #FFD700);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect */
+  .category-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card content */
+  .category-card .card-body {
+    padding: 20px;
+    color: #fff;
+  }
+  
+  /* Button styling */
+  .category-card .btn-primary {
+    background-color: #000; /* Initial background color (black) */
+    color: #fff; /* Text color */
+    border: none;
+    transition: background-color 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  /* Button hover effect */
+  .category-card .btn-primary:hover {
+    background-color: orange; /* Change to the desired color on hover */
+    transform: scale(1.1); /* Increase size on hover */
+  }
+  
+  /* Responsive font size */
+  @media (max-width: 576px) {
+    .category-card .card-title {
+      font-size: 1rem; /* Adjust font size for small screens */
+    }
+  
+    .category-card .card-text {
+      font-size: 0.8rem; /* Adjust font size for small screens */
+    }
+  }
+  
+  /* Display three cards in a row on larger screens */
+  @media (min-width: 768px) {
+    .category-card {
+      max-width: calc(33.333% - 20px); /* Three cards in a row with margin */
+    }
+  }
+  
